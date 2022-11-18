@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The Eternal State
+title: The Eternal State 
 description: Test page
 ---
 # Lorem ipsum

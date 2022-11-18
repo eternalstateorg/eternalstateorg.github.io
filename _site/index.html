@@ -86,78 +86,25 @@
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/">Home</a></li>
-              
-                <li><a href="/blog">Blog</a></li>
-              
+                
+                <li class="dropdown dropdown-dropdown1">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                    role="button" aria-haspopup="true" aria-expanded="false">App
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-item1">
+                    <li priority="1"><a href="/dropdown/dropdown1_item1.html">Legislature</a></li>
+                    <li priority="1"><a href="/dropdown/dropdown1_item1.html">Executive</a></li>
+                    <li priority="1"><a href="/dropdown/dropdown1_item1.html">Judiciary</a></li>
+                  </ul>
+                </li>
 
-              
-                <li class="dropdown dropdown-dropdown1">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                    role="button" aria-haspopup="true" aria-expanded="false">dropdown1
-                    <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-item1">
-                    <li priority="1"><a href="/dropdown/dropdown1_item1.html">item1</a></li>
-                  </ul>
-                </li>
-              
-                <li class="dropdown dropdown-dropdown1">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                    role="button" aria-haspopup="true" aria-expanded="false">dropdown1
-                    <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-item2">
-                    <li priority="2"><a href="/dropdown/dropdown1_item2.html">item2</a></li>
-                  </ul>
-                </li>
-              
-                <li class="dropdown dropdown-dropdown1">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                    role="button" aria-haspopup="true" aria-expanded="false">dropdown1
-                    <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-item3">
-                    <li priority="3"><a href="/dropdown/dropdown1_item3.html">item3</a></li>
-                  </ul>
-                </li>
-              
-                <li class="dropdown dropdown-dropdown2">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                    role="button" aria-haspopup="true" aria-expanded="false">dropdown2
-                    <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-item1">
-                    <li priority=""><a href="/dropdown/dropdown2_item1.html">item1</a></li>
-                  </ul>
-                </li>
-              
-                <li class="dropdown dropdown-dropdown2">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                    role="button" aria-haspopup="true" aria-expanded="false">dropdown2
-                    <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-item2">
-                    <li priority=""><a href="/dropdown/dropdown2_item2.html">item2</a></li>
-                  </ul>
-                </li>
-              
-                <li class="dropdown dropdown-dropdown3">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                    role="button" aria-haspopup="true" aria-expanded="false">dropdown3
-                    <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-item1">
-                    <li priority=""><a href="/dropdown/dropdown3_item1.html">item1</a></li>
-                  </ul>
-                </li>
-              
-              
+                <li><a href="/blog">Articles</a></li>
+
+                <li class="nav-item"><a href="/items/about_indeed.html">News</a></li>
+                <li class="nav-item"><a href="/items/about_indeed.html">Whitepaper</a></li>
                 <li class="nav-item"><a href="/items/about.html">About</a></li>
               
-                <li class="nav-item"><a href="/items/about_indeed.html">About Indeed</a></li>
-              
-
               <script>
                 // clean repeated dropdowns and add <li> to their positions
                 let done = [];
@@ -175,7 +122,8 @@
                     $(dropdownClass).remove();
                     elements.push(dropdownMain)
                 });
-                let priority = [ "dropdown2",  "About",  "dropdown1", ];
+                //let priority = [ "dropdown2",  "About",  "dropdown1", ];
+                let priority = [ "App",  "Article",  "", ];
                 elements = elements.concat(...$(".nav-item").remove())
                 priority.map(text => {
                   elements = elements.filter(node => {

@@ -29,6 +29,8 @@ facebook_username: "<facebook_username>"
 twitter_username: "<twitter_username>"
 linkedin_id: "<linkedin_id>"
 
+
+
 # Theme
 # theme: jekyll-theme-potato-hacker                 # Uncomment this
 # remote_theme: luxedo/jekyll-theme-potato-hacker   # Or this
@@ -49,6 +51,7 @@ toolbar_priority:        # Order of the items in the toolbar (except for blog an
   - About
   - dropdown1
 
+
 # Collections
 collections:
   dropdown:
@@ -59,6 +62,7 @@ collections:
 
 
 # Build settings
+permalink: /:categories/:title/
 excerpt_separator: "<!--more-->"
 markdown: kramdown
 highlighter: rouge

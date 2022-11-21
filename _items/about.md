@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Whitepaper
 description: Test page
 ---
 # Lorem ipsum

@@ -62,6 +62,7 @@ collections:
   items:
     output: true
   protected:
+    output: true
 # ------------------------------------------------------------------------------
 
 

@@ -23,8 +23,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # ------------------------------------------------------------------------------
 # Custom settings
 
-collections:
-  protected:
 
 # ------------------------------------------------------------------------------
 # Useful links
@@ -58,6 +56,7 @@ toolbar_priority:        # Order of the items in the toolbar (except for blog an
 
 # Collections
 collections:
+  protected:
   dropdown:
     output: true
   items:
